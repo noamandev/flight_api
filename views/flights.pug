@@ -1,0 +1,20 @@
+doctype html 
+
+html 
+    head 
+        title Fly Away
+
+    body 
+        h1 Local flights at #{ departureParam }
+        ul  
+            each n, i in flight
+                li= flight
+
+            for i in flight
+                li  
+                    p= departure.airport 
+                    p= flight.iata 
+                    p= flight.icao
+                    p= flight.gate
+                    p= flight.scheduled
+                    p= flight.flight_date
